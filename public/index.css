@@ -1,0 +1,139 @@
+body{
+    margin: 0px;
+    background: linear-gradient(45deg, white, black);
+}
+html, body {
+    max-width: 100%;
+    height:100%;
+    overflow-x: hidden;
+}
+
+.header{
+    width:98%;
+    height:6vw;
+    padding:1vw;
+    background-color: rgb(32, 32, 32, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top:0px;
+    left:0px;
+    z-index: 3;
+    box-shadow: 0px 0px 10px 0px black;
+
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    gap:0rem;
+}
+
+.navOptions{
+  
+    list-style-type: none;
+    float:right;
+    width:35vw;
+    margin-left: 9vw;
+    margin-top: 1.2vw;
+    
+}
+
+.navBar img{
+    width:5vw;
+    height:5vw;
+    margin-left: 2vw;
+    
+}
+
+.navBar h2{
+    margin-left: 1vw;
+    color:rgb(10, 209, 209);
+    font-size: 2vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.intro{
+    display:flex;
+    width:50vw;
+    
+    
+    
+}
+.navOptions li{
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-between;
+    margin-left:2vw;
+    color:rgb(199, 199, 199);
+    padding:1vw 1.2vw 1vw 1.2vw;
+    font-size: 1.5vw;
+    font-family:'Times New Roman', Times, serif;
+    transition: 0.2s;
+    border-radius:0.4vw;
+    
+
+}
+
+.navOptions li:hover{
+    background-color: rgb(43, 43, 43);
+    cursor: pointer;
+    
+}
+
+.main{
+    width: 100%;
+    background-color: rgb(32, 32, 32);
+    height:100%;
+    margin-top: 8vw;
+    padding-top: 5vw;
+    align-items: center;
+    text-align: center;
+    background-image: url("../public/logo192.png");
+
+}
+
+.funFacts{
+
+    max-width: 50rem;
+   
+    margin-left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: left;
+    
+    
+}
+
+.funFacts h2{
+    color:rgb(226, 226, 226);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.6rem;
+}
+
+.facts li{
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color:rgb(206, 206, 206);
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+.facts li::before{
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: rgb(11, 227, 255); /* Change the color */
+    font-weight: bold;
+    font-size: 2rem; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.funFacts img{
+    width:30rem;
+    filter: grayscale(100%);
+    opacity: 0.1;
+    position:absolute;
+    top:10%;
+    left:100%;
+}
+
+
+
+
